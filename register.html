@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniConnect | Registo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="auth" class="auth-page">
+    <div class="auth-layout auth-layout-compact">
+      <aside class="auth-visual">
+        <div class="brand-wrap brand-auth">
+          <div class="brand-mark">U</div>
+          <div>
+            <div class="brand-name">UniConnect</div>
+            <small>Conectar. Aprender. Partilhar.</small>
+          </div>
+        </div>
+
+        <div class="auth-copy">
+          <span class="eyebrow">Faça parte da comunidade</span>
+          <h1>Crie a sua conta e comece a crescer academicamente.</h1>
+          <p>Registe-se como estudante e entre no feed, grupos e perguntas da plataforma.</p>
+        </div>
+      </aside>
+
+      <main class="auth-panel">
+        <div class="auth-card">
+          <div class="auth-header">
+            <h2>Registar</h2>
+            <p>Preencha os seus dados pessoais.</p>
+          </div>
+
+          <form id="registerForm" class="auth-form">
+            <div class="two-fields">
+              <div class="field-group">
+                <label for="fullName">Nome completo</label>
+                <input id="fullName" type="text" placeholder="Ex.: Ana da Silva" required />
+              </div>
+
+              <div class="field-group">
+                <label for="registerEmail">Email</label>
+                <input id="registerEmail" type="email" placeholder="ana@isctem.mz" required />
+              </div>
+            </div>
+
+            <div class="two-fields">
+              <div class="field-group">
+                <label for="province">Província</label>
+                <select id="province" required>
+                  <option value="">Selecione</option>
+                  <option>Maputo</option>
+                  <option>Gaza</option>
+                  <option>Inhambane</option>
+                  <option>Sofala</option>
+                  <option>Manica</option>
+                  <option>Tete</option>
+                  <option>Zambézia</option>
+                  <option>Nampula</option>
+                  <option>Niassa</option>
+                  <option>Cabo Delgado</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="school">Escola/Universidade</label>
+                <input id="school" type="text" placeholder="Ex.: UEM" required />
+              </div>
+            </div>
+
+            <div class="two-fields">
+              <div class="field-group">
+                <label for="course">Curso/Classe</label>
+                <input id="course" type="text" placeholder="Ex.: Engenharia de Software" required />
+              </div>
+
+              <div class="field-group">
+                <label for="password">Palavra-passe</label>
+                <div class="password-wrap">
+                  <input id="registerPassword" type="password" placeholder="Crie uma senha" required />
+                  <button type="button" class="toggle-password" data-target="registerPassword">Mostrar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="bio">Biografia</label>
+              <textarea id="bio" rows="3" placeholder="Escreva uma pequena apresentação"></textarea>
+            </div>
+
+            <label class="checkbox-row checkbox-terms">
+              <input type="checkbox" required /> Confirmo que li e aceito os termos e políticas do UniConnect.
+            </label>
+
+            <button type="submit" class="btn btn-primary btn-block">Criar conta</button>
+          </form>
+
+          <div class="auth-switch">
+            Já tem conta? <a href="login.html">Entrar</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

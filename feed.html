@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniConnect | Feed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="feed">
+    <div class="app-shell">
+      <header class="topbar fixed-header">
+        <div class="container nav-shell nav-shell-app">
+          <div class="brand-wrap">
+            <div class="brand-mark">U</div>
+            <div>
+              <div class="brand-name">UniConnect</div>
+            </div>
+          </div>
+
+          <div class="search-box">
+            <span>🔎</span>
+            <input type="text" placeholder="Pesquisar estudantes, grupos ou temas" />
+          </div>
+
+          <div class="topbar-actions">
+            <button class="icon-btn" aria-label="Notificações">🔔</button>
+            <button class="icon-btn" aria-label="Mensagens">💬</button>
+            <a href="profile.html" class="user-pill">
+              <span class="avatar avatar-sm">A</span>
+              <span id="headerUserName">Aluno</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="app-layout container">
+        <aside class="sidebar left-sidebar">
+          <nav class="side-nav">
+            <a class="active" href="feed.html">🏠 Início</a>
+            <a href="explore.html">🔍 Explorar</a>
+            <a href="questions.html">❓ Perguntas</a>
+            <a href="videos.html">🎥 Vídeos</a>
+            <a href="groups.html">👥 Grupos</a>
+            <a href="messages.html">💬 Mensagens</a>
+            <a href="profile.html">👤 Meu perfil</a>
+            <a href="settings.html">⚙️ Definições</a>
+          </nav>
+
+          <div class="sidebar-card">
+            <h4>Grupos em destaque</h4>
+            <ul>
+              <li>Programação e tecnologia</li>
+              <li>Matemática 12ª</li>
+              <li>Estudantes UEM</li>
+            </ul>
+          </div>
+        </aside>
+
+        <main class="content-column">
+          <section class="composer card">
+            <div class="composer-header">
+              <div class="avatar avatar-md">A</div>
+              <div>
+                <h4 id="composerUserName">Aluno</h4>
+                <p>O que queres partilhar hoje?</p>
+              </div>
+            </div>
+
+            <form id="postForm">
+              <textarea id="postContent" rows="3" placeholder="Escreve uma publicação para a tua comunidade..."></textarea>
+
+              <div class="composer-tools">
+                <label class="file-upload">
+                  <input type="file" id="postImage" accept="image/*" />
+                  <span>📷 Foto</span>
+                </label>
+                <button type="submit" class="btn btn-primary">Publicar</button>
+              </div>
+
+              <div id="imagePreview" class="image-preview hidden"></div>
+            </form>
+          </section>
+
+          <section id="feedList" class="feed-list"></section>
+        </main>
+
+        <aside class="sidebar right-sidebar">
+          <div class="sidebar-card">
+            <h4>Estudantes em destaque</h4>
+            <div id="suggestionsList" class="mini-list"></div>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Discussões</h4>
+            <ul>
+              <li>Como estudar para exames finais?</li>
+              <li>Melhores ferramentas para programação</li>
+              <li>Partilha de materiais de física</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

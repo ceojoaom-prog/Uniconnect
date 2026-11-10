@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniConnect | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="auth" class="auth-page">
+    <div class="auth-layout">
+      <aside class="auth-visual">
+        <div class="brand-wrap brand-auth">
+          <div class="brand-mark">U</div>
+          <div>
+            <div class="brand-name">UniConnect</div>
+            <small>Conectar. Aprender. Partilhar.</small>
+          </div>
+        </div>
+
+        <div class="auth-copy">
+          <span class="eyebrow">Bem-vindo de volta</span>
+          <h1>Entre na sua comunidade académica.</h1>
+          <p>Converse, aprenda, partilhe materiais e acompanhe tudo no teu feed.</p>
+        </div>
+
+        <div class="auth-badges">
+          <span>Estudantes</span>
+          <span>Grupos</span>
+          <span>Perguntas</span>
+          <span>Vídeos</span>
+        </div>
+      </aside>
+
+      <main class="auth-panel">
+        <div class="auth-card">
+          <div class="auth-header">
+            <h2>Login</h2>
+            <p>Insira os seus dados para continuar.</p>
+          </div>
+
+          <form id="loginForm" class="auth-form">
+            <div class="field-group">
+              <label for="loginEmail">Email</label>
+              <input id="loginEmail" type="email" placeholder="seuemail@escola.mz" required />
+            </div>
+
+            <div class="field-group">
+              <label for="loginPassword">Palavra-passe</label>
+              <div class="password-wrap">
+                <input id="loginPassword" type="password" placeholder="••••••••" required />
+                <button type="button" class="toggle-password" data-target="loginPassword">Mostrar</button>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="checkbox-row"><input type="checkbox" />Lembrar sessão</label>
+              <a href="#">Esqueci-me</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          </form>
+
+          <div class="auth-switch">
+            Ainda não tem conta? <a href="register.html">Registar-se</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

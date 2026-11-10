@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniConnect | Vídeos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="videos">
+    <div class="app-shell">
+      <header class="topbar fixed-header">
+        <div class="container nav-shell nav-shell-app">
+          <div class="brand-wrap">
+            <div class="brand-mark">U</div>
+            <div>
+              <div class="brand-name">UniConnect</div>
+            </div>
+          </div>
+
+          <div class="search-box">
+            <span>🔎</span>
+            <input type="text" placeholder="Buscar vídeos" />
+          </div>
+
+          <div class="topbar-actions">
+            <a href="feed.html" class="icon-btn" aria-label="Feed">🏠</a>
+            <a href="profile.html" class="user-pill">
+              <span class="avatar avatar-sm">A</span>
+              <span id="headerUserName">Aluno</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="app-layout container page-layout">
+        <aside class="sidebar left-sidebar">
+          <nav class="side-nav">
+            <a href="feed.html">🏠 Início</a>
+            <a href="explore.html">🔍 Explorar</a>
+            <a href="questions.html">❓ Perguntas</a>
+            <a class="active" href="videos.html">🎥 Vídeos</a>
+            <a href="groups.html">👥 Grupos</a>
+            <a href="messages.html">💬 Mensagens</a>
+            <a href="profile.html">👤 Meu perfil</a>
+            <a href="settings.html">⚙️ Definições</a>
+          </nav>
+        </aside>
+
+        <main class="content-column">
+          <section class="page-header card">
+            <h2>Vídeos</h2>
+            <p>Aprende com conteúdos educativos e partilha o teu trabalho académico.</p>
+          </section>
+
+          <section id="videosList" class="cards-grid video-grid"></section>
+        </main>
+
+        <aside class="sidebar right-sidebar">
+          <div class="sidebar-card">
+            <h4>Últimas aulas</h4>
+            <ul>
+              <li>Introdução à lógica</li>
+              <li>Estatística aplicada</li>
+              <li>Desenho técnico</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
