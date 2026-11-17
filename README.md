@@ -1,2 +1,2 @@
 # Uniconnect
-Plataforma social académica para estudantes comunicarem, partilharem conhecimentos, vídeos e informações.
+Plataforma social académica para estudantes comunicarem, partilharem conhecimentos, vídeos e informações incluindo conversas
